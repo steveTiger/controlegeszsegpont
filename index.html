@@ -1,132 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hu">
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Control EgészségPont, bemer terápia, készülékek értékesítése, bérlete." />
     <meta name="keywords"
         content="bemer, bemer terápia, érkezelés, érterápia, mikrokeringés, gyógyászat, mágnes terápia, bérlés, bemer készülék" />
+    <meta name="author" content="steveTiger">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel=" stylesheet" href="bootstrap-4.5.0/css/bootstrap.min.css">
     <title>Control EgészségPont</title>
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-4.5.0/css/bootstrap.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        #grad1 {
+            height: 200px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(to left, rgb(242, 104, 42), rgb(255, 255, 255));
+            /* Standard syntax (must be last) */
+        }
+
+        #bemerpartner {
+            margin-top: 150;
+            justify-content: flex-end;
+            display: flex;
+
+        }
+
+        #logo {
+            justify-content: center;
+            display: flex;
+        }
+
+        #gep1 {
+            justify-content: center;
+            display: flex;
+        }
+
+        }
+    </style>
+    <!-- Custom styles for this template -->
+
 </head>
 
-<body background="#fff" ;>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/index.html">Kezdőlap<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/index.html">Kezdőlap <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/about.html">Rólunk</a>
+                    <a class="nav-link disabled" href="/about.html" aria-disabled="true">Rólunk</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="/features.html" aria-disabled="true">Szolgáltatásunk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="/contact.html" aria-disabled="true">Kapcsolat</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
 
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact.html">Kapcsolat</a>
-                </li>
+                <!--<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>-->
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Keresés</button>
-            </form>
+            <!--<form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
         </div>
     </nav>
-    <div class="container-fluid">
-        <!--container starts -->
-        <div class="row-fluid">
-            <!--first row starts -->
-            <div class="span3">
-                <h1>Frontend</h1>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo,
-                    egestas
-                    id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
+
+    <main role="main" class="container hatter">
+
+        <div class="container">
+            <!--container starts -->
+            <div class="row">
+                <!--first row starts -->
+                <div class="col-4" style="margin-top: 50pt;">
+                    <img src="img/bemer_csontvaz1.jpg" alt="Bemer csontvaz" style="width:300px;">
+                </div>
+
+                <div class="col-8" style="margin-top: 50pt;">
+                    <div id="bemerpartner">
+                        <img src="img/bemer_partner.png" alt="Bemer Partner" stile="with:600px">
+                    </div>
+
+                    <div id="grad1">
+                        <h1 style="text-align: center;"">FIZIKAI</h1>
+                        <h1 style=" padding-left:200pt; color: white;">ÉRTERÁPIA</h1>
+                        <h1 style="text-align: center;">BEMUTATÁS ÉS KEZELÉS</h1>
+                    </div>
+                </div>
             </div>
-            <div class="span3">
-                <h1>Server Side</h1>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo,
-                    egestas
-                    id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
+            <div id="gep1">
+                <img src="img/bemer_pro150.png" alt="Bemer Pro készülék" style="width: 400px;">
             </div>
-            <div class="span3">
-                <h1>RDBMS</h1>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo,
-                    egestas
-                    id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
+
+            <div id="logo">
+                <img src="img/logo.png" alt="">
             </div>
-            <div class="span3">
-                <h1>APIs/NoSQL</h1>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo,
-                    egestas
-                    id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.</p>
+            <div style="background-color: rgb(242, 104, 42);">
+                <h4 style="text-align:center">4026 Debrecen, Csemete utca 36-38.sz (a 2-es villamos megállóval szemben)
+                </h4>
+                <h4 style="text-align:center">Elérhetőségek:Dócz Andrea: 06 20 472 0091* Balogh Dóra:06 20 288 2550</h4>
             </div>
-        </div>
-        <!--first row ends -->
-        <div class="row-fluid">
-            <!--second row starts -->
-            <div class="span6">
-                <hr>
-                <img src="img/8399337241_52f0280326_b.jpg" alt="Technology">
-                <!--Photo Credit: http://www.flickr.com/photos/mcleod/ -->
-            </div>
-            <div class="span6">
-                <hr>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo,
-                    egestas
-                    id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante,
-                    elementum et,
-                    bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum. Suspendisse
-                    vulputate
-                    aliquam dui. Nulla elementum dui ut augue. Aliquam vehicula mi at mauris. Maecenas placerat, nisl at
-                    consequat
-                    rhoncus, sem nunc gravida justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt
-                    a, mattis
-                    non, imperdiet vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce
-                    id felis.
-                    Vivamus sollicitudin metus eget eros.</p>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In
-                    posuere
-                    felis nec tortor. Pellentesque faucibus. Ut accumsan ultricies elit. Maecenas at justo id velit
-                    placerat
-                    molestie. Donec dictum lectus non odio. Cras a ante vitae enim iaculis aliquam. Mauris nunc quam,
-                    venenatis
-                    nec, euismod sit amet, egestas placerat, est. Pellentesque habitant morbi tristique senectus et
-                    netus et
-                    malesuada fames ac turpis egestas. Cras id elit. Integer quis urna. Ut ante enim, dapibus malesuada,
-                    fringilla
-                    eu, condimentum quis, tellus. Aenean porttitor eros vel dolor. Donec convallis pede venenatis nibh.
-                    Duis quam.
-                    Nam eget lacus. Aliquam erat volutpat. Quisque dignissim congue leo.</p>
-                <p>Maecenas aliquet velit vel turpis. Mauris neque metus, malesuada nec, ultricies sit amet, porttitor
-                    mattis,
-                    enim. In massa libero, interdum nec, interdum vel, blandit sed, nulla. In ullamcorper, est eget
-                    tempor cursus,
-                    neque mi consectetuer mi, a ultricies massa est sed nisl. Class aptent taciti sociosqu ad litora
-                    torquent per
-                    conubia nostra, per inceptos hymenaeos. Proin nulla arcu, nonummy luctus, dictum eget, fermentum et,
-                    lorem.
-                    Nunc porta convallis pede.</p>
-            </div>
-        </div>
-        <!--second row ends -->
-        <div class="row-fluid">
-            <!--third row starts -->
-            <div class="span12">
-                <hr>
-                <p>This is a Creative Common License product.</p>
-            </div>
-        </div>
-        <!--third row ends -->
-    </div>
-    <!--container ends -->
+            <!--first row ends -->
+
+
+    </main><!-- /.container -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="bootstrap-4.5.0/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="bootstrap-4.5.0/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
