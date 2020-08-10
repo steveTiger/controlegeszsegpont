@@ -1011,7 +1011,10 @@ hr {
 
 
 header {
-	background: #74a20c;
+  /*background: #74a20c;*/
+  /*background: #f2682a;*/
+  background: #f2a22a;
+ 
 	/*background: rgb(242, 104, 42);*/
 	color: #fff;
 	padding: 10px 0;
@@ -1033,9 +1036,22 @@ header nav a {
 	text-transform: uppercase;
 }
 header nav a:hover {
-	background: #537506;
+  /*background: #537506;*/
+  background: #d94c08;
 	box-shadow: inset 0 0 10px rgba(0,0,0,0.2)
 }
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /*background-color: red;*/
+  background:#f2a22a;
+  color: white;
+  text-align: center;
+}
+
+
 .main-image {
 		background: url('../img/kep00.jpg');
 		background-size: cover;
@@ -1060,7 +1076,8 @@ header nav a:hover {
 		display: block;
 	}
 	header nav a {
-		background: #537506; 
+    /*background: #537506; */
+    background: #f2682a;
 		margin: 0 0 2px 0
 	}
 	header h1 {
