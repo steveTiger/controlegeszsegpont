@@ -10,9 +10,11 @@
 
   <title>Control EgészségPont</title>
 
-  <link rel="stylesheet" href="lib/bootstrap.css" type="text/css">
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/lib/css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext" rel="stylesheet"
+    type="text/css">
 
 </head>
 
@@ -40,63 +42,68 @@
 
     </div>
   </header>
+  <div class="container">
+    <div class="alert alert-primary" role="alert">
+      <h4 class="alert-heading">Az alábbi térkép segítségével könyebben eljuthatsz hozzánk.</h4>
+      <p></p>
+      <hr>
+      <p class="mb-0">Bejáratunk előtt autóbusz és villamos megálló van,
+        a szomszédos utcákban pedig gépkocsiddal tudsz parkolni.</p>
+    </div>
+  
 
-  <main role="main" class="container">
 
-    <div class="container-fluid">
-      <!--container starts -->
-      <div class="row-fluid">
-        <!--first row starts -->
-        <div class="span6">
-          <h1>Sign in / log in to start working with us</h1>
-          <form class="form-horizontal">
-            <div class="control-group">
-              <label class="control-label" for="inputEmail">Email</label>
-              <div class="controls">
-                <input type="text" id="inputEmail" placeholder="Email">
-              </div>
-            </div>
-            <div class="control-group">
-              <label class="control-label" for="inputPassword">Password</label>
-              <div class="controls">
-                <input type="password" id="inputPassword" placeholder="Password">
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="controls">
-                <label class="checkbox">
-                  <input type="checkbox"> Remember me
-                </label>
-                <br>
 
-                <button type="submit" class="btn btn-large btn-success">Jelentkezz be</button>
-              </div>
-            </div>
-          </form>
+
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2693.648619165332!2d21.615318115628092!3d47.53570357918002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47470f57679dd989%3A0xdeae925505493c58!2sControl%20Eg%C3%A9szs%C3%A9gPont!5e0!3m2!1shu!2shu!4v1597183968208!5m2!1shu!2shu"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+
+    </div>
+
+
+   
+    <div class="alert alert-success" role="alert">
+      <h4 class="alert-heading">Írj nekünk!</h4>
+      <p></p>
+      <hr>
+      <p class="mb-0">Számunkra fontos a véleményed.</p>
+    </div>
+
+    <div class="container">
+      <form>
+        <div class="form-row form-group">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Vezetéknév">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Keresztnév">
+          </div>
+        </div>    
+        <div class="form-group">
+          <label for="email">Email cimed</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          <small id="emailHelp" class="form-text text-muted">Soha nem adjuk ki másnak az email címedet</small>
         </div>
-        <!--first row ends -->
-        <div class="row-fluid">
-          <!--fourth row starts -->
-          <div class="span12">
+        <div class="form-group">
+          <label for="subject">Üzenet</label>
+          <textarea class="form-control" id="subject" rows="10"></textarea>
+        </div>
+        <div class="form-group row">
+          <div class="col">
+            <button type="submit" class="btn btn-primary">Küldés</button>
             <hr>
 
           </div>
         </div>
-        <!--fourth row ends -->
-      </div>
-      <!--container ends -->
-
+      </form>
 
     </div>
-
-  </main><!-- /.container -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
-  <script src="../assets/dist/js/bootstrap.bundle.js"></script>
-  <div class="footer">
-    <p>időpontegyeztetés +36 20 123 45 69</p>
+    <div class="footer">
+      <p>időpontegyeztetés +36 20 123 45 69</p>
+    </div>
   </div>
 </body>
 
